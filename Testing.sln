@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneOhOne", "OneOhOne\OneOhOne.csproj", "{2E4B4ACC-4F44-4020-AA20-8B79A9B39C24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneOhOne.Tests", "OneOhOne.Tests\OneOhOne.Tests.csproj", "{60FFCE2A-1B39-4874-89BD-FF58E8CAA907}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E4B4ACC-4F44-4020-AA20-8B79A9B39C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4B4ACC-4F44-4020-AA20-8B79A9B39C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E4B4ACC-4F44-4020-AA20-8B79A9B39C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E4B4ACC-4F44-4020-AA20-8B79A9B39C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60FFCE2A-1B39-4874-89BD-FF58E8CAA907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60FFCE2A-1B39-4874-89BD-FF58E8CAA907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60FFCE2A-1B39-4874-89BD-FF58E8CAA907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60FFCE2A-1B39-4874-89BD-FF58E8CAA907}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
