@@ -10,7 +10,7 @@ namespace OneOhOne.Repositories
     {
         public void Delete(long id)
         {
-            
+            throw new ArgumentNullException("This is probably way better!");
         }
 
         public void Delete(Record record)

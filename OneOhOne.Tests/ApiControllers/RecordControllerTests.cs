@@ -56,5 +56,88 @@ namespace OneOhOne.ApiControllers.Tests
             _controller = new RecordController(service);
             _controller.DeleteRecord(new RecordDto());
         }
+
+        [TestMethod()]
+        public void DeleteRecordTestNoExpect()
+        {
+            var service = new Services.Fakes.StubIRecordService()
+            {
+                DeleteRecordDto = dto => { throw new ArgumentNullException(); }
+            };
+            _controller = new RecordController(service);
+            _controller.DeleteRecord(new RecordDto());
+        }
+
+        [TestMethod()]
+        public void DeleteRecordTestNoExpectTry()
+        {
+            try
+            {
+                var service = new Services.Fakes.StubIRecordService()
+                {
+                    DeleteRecordDto = dto => { throw new ArgumentNullException(); }
+                };
+                _controller = new RecordController(service);
+                _controller.DeleteRecord(new RecordDto());
+            }
+            catch(Exception e)
+            {
+                Assert.Fail(e.Message);
+            }
+        }
+
+        [TestMethod()]
+        public void DeleteRecordTestNoExpectTryEqual()
+        {
+            try
+            {
+                var service = new Services.Fakes.StubIRecordService()
+                {
+                    DeleteRecordDto = dto => { return; }
+                };
+                _controller = new RecordController(service);
+                _controller.DeleteRecord(new RecordDto());
+                Assert.AreEqual("", " ");
+            }
+            catch (Exception e)
+            {
+                Assert.Fail(e.Message);
+            }
+        }
+
+        [TestMethod()]
+        public void DeleteRecordTestNoExpectTryNoMock()
+        {
+            try
+            {
+                _controller = new RecordController();
+                _controller.DeleteRecord(new RecordDto());
+            }
+            catch (Exception e)
+            {
+                Assert.Fail(e.Message);
+            }
+        }
+
+        [TestMethod()]
+        public void DeleteRecordTestNoExpectNoMock()
+        {
+            _controller = new RecordController();
+            _controller.DeleteRecord(new RecordDto());
+        }
+
+        [TestMethod()]
+        public void DeleteRecordTestNoExpectTryNoMockTraced()
+        {
+            try
+            {
+                _controller = new RecordController();
+                _controller.DeleteRecord(new RecordDto());
+            }
+            catch (Exception e)
+            {
+                Assert.Fail($"{e.Message}\n{e.StackTrace}");
+            }
+        }
     }
 }
