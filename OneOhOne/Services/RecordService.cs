@@ -4,6 +4,9 @@ using OneOhOne.Repositories;
 
 namespace OneOhOne.Services
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class RecordService : IRecordService
     {
 
