@@ -12,7 +12,7 @@ namespace OneOhOne.ApiControllers.Tests
         /// Context for getting info about the currently
         /// running unit test. Use this to avoid hard-
         /// coded literal strings; for example, unit test
-        /// name. This is automatically set by th framework.
+        /// name. This is automatically set by the framework.
         /// </summary>
         public TestContext TestContext { get; set; }
 
@@ -113,7 +113,7 @@ namespace OneOhOne.ApiControllers.Tests
 
         /// <summary>
         /// Example using a faked service, a try, and no expected exception
-        /// defined. Expecting it wouldn't matter thow because we trap that
+        /// defined. Expecting it wouldn't matter tho because we trap that
         /// and Assert.Fail throws a different exception; so the test fails
         /// anyway. We also get a minimal stack trace that starts at the
         /// assert call thereby losing all valuable information needed to 
