@@ -16,6 +16,7 @@ namespace OneOhOne.ApiControllers.Tests
         /// </summary>
         public TestContext TestContext { get; set; }
 
+        // Controller under test.
         RecordController _controller;
 
         /// <summary>
